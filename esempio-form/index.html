@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Esempio form</title>
+    </head>
+    <body>
+        <form action="server.php" method="post">
+            <div class="">
+                <input type="text" name="nome" placeholder="Inserisci nome" required>
+            </div>
+            <div class="">
+                <input type="text" name="cognome" placeholder="Inserisci cognome">
+            </div>
+            <div class="">
+                <p>seleziona il tuo genere</p>
+                <label>
+                    <input type="radio" name="genere" value="M">
+                    maschio
+                </label>
+                <label>
+                    <input type="radio" name="genere" value="F">
+                    femmina
+                </label>
+                <label>
+                    <input type="radio" name="genere" value="X">
+                    preferisco non specificare
+                </label>
+            </div>
+            <div class="">
+                <p>indica i linguaggi che conosci</p>
+                <label>
+                    <input type="checkbox" name="linguaggi[]" value="html">
+                    HTML
+                </label>
+                <label>
+                    <input type="checkbox" name="linguaggi[]" value="css">
+                    CSS
+                </label>
+                <label>
+                    <input type="checkbox" name="linguaggi[]" value="js">
+                    JS
+                </label>
+            </div>
+            <div class="">
+                <p>seleziona la tua lingua</p>
+                <select name="lingua">
+                    <option value="">-- seleziona lingua --</option>
+                    <option value="it">italiano</option>
+                    <option value="en">inglese</option>
+                    <option value="de">tedesco</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Invia dati">
+        </form>
+        <script src="main.js" charset="utf-8"></script>
+    </body>
+</html>
