@@ -3,7 +3,7 @@
 require_once 'Libro.php';
 
 class Manuale extends Libro {
-    public $argomento;
+    private $argomento;
 
     public function __construct($_titolo, $_autore, $_argomento) {
         parent::__construct($_titolo, $_autore);
